@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Serilog.Expressions" Version="5.0.0" />
+	  <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+	  <PackageReference Include="Serilog.Enrichers.Environment" Version="3.0.1" />
+	  <PackageReference Include="Serilog.Sinks.Async" Version="2.1.0" />
+	  <PackageReference Include="Serilog.Enrichers.Span" Version="3.1.0" />
+	  <PackageReference Include="Elastic.Serilog.Sinks" Version="8.12.3" />
+	  <PackageReference Include="Elastic.Apm.SerilogEnricher" Version="8.12.3" />
+	  <PackageReference Include="Elastic.CommonSchema.Serilog" Version="8.12.3" />
+	  <PackageReference Include="Elastic.Apm.NetCoreAll" Version="1.31.0" />
+  </ItemGroup>
+
+</Project>

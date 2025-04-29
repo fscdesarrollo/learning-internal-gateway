@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7F36ECED-1305-476F-A82B-0E7864E7D6A5}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7A13BEA8-914F-448E-88DD-43B8EB2A411D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.InternalGateway.Gateway", "src\Learning.InternalGateway.Gateway\Learning.InternalGateway.Gateway.csproj", "{D50BCB6B-E6E0-41F5-8C11-E413E6CA58B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.InternalGateway.Transactions.API", "src\Learning.InternalGateway.Transactions.API\Learning.InternalGateway.Transactions.API.csproj", "{9990AFE1-8C26-4317-893D-AA23B7AC327D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.InternalGateway.Web", "src\Learning.InternalGateway.Web\Learning.InternalGateway.Web.csproj", "{DE055E2C-25C1-44DC-A483-6FF5E9E4A966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.InternalGateway.Shared", "src\Learning.InternalGateway.Shared\Learning.InternalGateway.Shared.csproj", "{3A29F150-2342-49F1-B703-F720B1EED690}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D50BCB6B-E6E0-41F5-8C11-E413E6CA58B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D50BCB6B-E6E0-41F5-8C11-E413E6CA58B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D50BCB6B-E6E0-41F5-8C11-E413E6CA58B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D50BCB6B-E6E0-41F5-8C11-E413E6CA58B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9990AFE1-8C26-4317-893D-AA23B7AC327D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9990AFE1-8C26-4317-893D-AA23B7AC327D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9990AFE1-8C26-4317-893D-AA23B7AC327D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9990AFE1-8C26-4317-893D-AA23B7AC327D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE055E2C-25C1-44DC-A483-6FF5E9E4A966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE055E2C-25C1-44DC-A483-6FF5E9E4A966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE055E2C-25C1-44DC-A483-6FF5E9E4A966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE055E2C-25C1-44DC-A483-6FF5E9E4A966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A29F150-2342-49F1-B703-F720B1EED690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A29F150-2342-49F1-B703-F720B1EED690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A29F150-2342-49F1-B703-F720B1EED690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A29F150-2342-49F1-B703-F720B1EED690}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D50BCB6B-E6E0-41F5-8C11-E413E6CA58B8} = {7A13BEA8-914F-448E-88DD-43B8EB2A411D}
+		{9990AFE1-8C26-4317-893D-AA23B7AC327D} = {7A13BEA8-914F-448E-88DD-43B8EB2A411D}
+		{DE055E2C-25C1-44DC-A483-6FF5E9E4A966} = {7A13BEA8-914F-448E-88DD-43B8EB2A411D}
+		{3A29F150-2342-49F1-B703-F720B1EED690} = {7A13BEA8-914F-448E-88DD-43B8EB2A411D}
+	EndGlobalSection
+EndGlobal

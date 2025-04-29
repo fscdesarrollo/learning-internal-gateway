@@ -1,0 +1,50 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/realms/{realm}/protocol/openid-connect/token",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8180
+        }
+      ],
+      "UpstreamPathTemplate": "/realms/{realm}/protocol/openid-connect/token",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/realms/{realm}/.well-known/openid-configuration",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8180
+        }
+      ],
+      "UpstreamPathTemplate": "/realms/{realm}/.well-known/openid-configuration",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/transactions",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7081
+        }
+      ],
+      "UpstreamPathTemplate": "/internal-gateway/transactions",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "InternalScheme",
+        "AllowedScopes": [
+          "checking-account:transaction:read",
+          "checking-account:transaction:write"
+        ]
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://internal-gateway-hml.miempresa.com"
+  }
+}
