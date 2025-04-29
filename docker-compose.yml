@@ -40,23 +40,6 @@ services:
     networks:
       - keycloak-net
 
-  internal-gateway:
-    image: mcr.microsoft.com/dotnet/aspnet:8.0
-    container_name: internal_gateway
-    ports:
-      - "5172:5172"   # HTTP
-      - "7161:7161"   # HTTPS
-    working_dir: /app
-    volumes:
-      - ./src/Learning.InternalGateway.Gateway:/app
-    command: ["dotnet", "Learning.InternalGateway.Gateway.dll", "--urls", "https://0.0.0.0:7161;http://0.0.0.0:5172"]
-    depends_on:
-      - keycloak
-    networks:
-      - keycloak-net
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-
 volumes:
   postgres_data:
 
